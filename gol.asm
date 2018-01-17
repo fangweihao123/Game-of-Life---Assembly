@@ -18,7 +18,7 @@ start:
 
 	mov al,34h   ; 设控制字值   
 	out 43h,al   ; 写控制字到控制字寄存器   
-	mov ax,0ffffh ; 中断时间设置  
+	mov ax,0ff00h ; 中断时间设置  
 	out 40h,al   ; 写计数器 0 的低字节   
 	mov al,ah    ; AL=AH   
 	out 40h,al   ; 写计数器 0 的高字节   
